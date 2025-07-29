@@ -1,32 +1,194 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: #333;
+a {
+  text-decoration: none;
+  color: #333;
 }
 
 /* 상단 메뉴 영역 */
 
-.section{
-    width: 340px;
-    margin: 50px auto;
-    border-radius: 10px;
-    background-color: beige;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
-    padding: 30px;
+.section {
+  width: 340px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: beige;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #aaa;
+  font-size: 20px;
 }
 
 /* 프로필 영역 */
 
+.profile {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 15px 30px rgba(3, 121, 255, 0.3);
+}
+
+.profile h1 {
+  font-size: 22px;
+  color: #555;
+  text-transform: uppercase;
+}
+.profile h2 {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.profile-img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.profile-img:hover img {
+  transform: scale(1.2);
+}
+
+.btn-view {
+  width: 180px;
+  background-color: rgb(107, 141, 252);
+  padding: 8px 0;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(45deg, #e8a9f3, #35e0f7);
+}
+
 /* 연락처 목록 */
+
+.link-contact {
+  padding: 20px;
+}
+
+.contact li {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.contact li i {
+  width: 20%;
+  color: #555;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+.contact li span {
+  width: 80%;
+  font-size: 11px;
+  font-family: "Orbitron", sans-serif;
+  padding: 5px 0;
+}
+
+
+/* 멤버별 프로필 링크 */
+.others {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.others a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+
+.others1 {
+  background-color: #35e0f7;
+  box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+.others2 {
+  background-color: #55f5cd;
+  box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+.others3 {
+  background-color: #ff80df;
+  box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+.others4 {
+  background-color: #a794fd;
+  box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
+
+.others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+.member1 {
+  background-color: #ebfaff;
+}
+
+.member2 {
+  background-color: #edffeb;
+}
+
+.member2 .profile-img {
+  box-shadow: 5px 15px 30px #bdccb783;
+}
+
+.member2 .btn-view {
+  background: linear-gradient(45deg, #a0ff9d, #55f5b2);
+  box-shadow: 5px 10px 20px rgba(33, 350, 105, 0.3);
+}
+
+
+.member3 {
+  background-color: #fff3fd;
+}
+.member3 .profile-img {
+  box-shadow: 5px 15px 30px rgba(252, 99, 214, 0.2);
+}
+.member3 .btn-view {
+  background: linear-gradient(45deg, #ef74ff, #ff11c4);
+  box-shadow: 5px 10px 20px rgba(255, 17, 196, 0.357);
+}
+
+.member4 {
+  background-color: #f5f0ff;
+}
+.member4 .profile-img {
+  box-shadow: 5px 15px 30px rgba(183, 82, 250, 0.2);
+}
+.member4 .btn-view {
+  background: linear-gradient(45deg, #8e74ff, #a011ff);
+  box-shadow: 5px 10px 20px rgba(160, 17, 255, 0.4);
+}
+
